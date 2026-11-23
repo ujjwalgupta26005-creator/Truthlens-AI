@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TruthLens AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <p class="eyebrow">AI-ASSISTED NEWS ANALYSIS</p>
+      <h1>TruthLens AI</h1>
+      <p class="sub">Examine suspicious news text and images with AI assistance.</p>
+    </header>
+
+    <section class="panel">
+      <h2>Analyze text</h2>
+      <textarea id="newsText" placeholder="Paste a news headline or claim (at least 5 characters)..."></textarea>
+      <button id="textBtn">Analyze text</button>
+    </section>
+
+    <section class="panel">
+      <h2>Analyze image</h2>
+      <input id="imageFile" type="file" accept="image/png,image/jpeg,image/webp">
+      <button id="imageBtn">Analyze image</button>
+    </section>
+
+    <section class="panel">
+      <div class="section-head">
+        <h2>Analysis result</h2>
+        <span id="status" aria-live="polite"></span>
+      </div>
+      <pre id="result">Your analysis will appear here.</pre>
+    </section>
+
+    <section class="panel">
+      <div class="section-head">
+        <h2>Previous history</h2>
+        <button class="secondary" id="refreshBtn">Refresh</button>
+      </div>
+      <div id="history">No history loaded yet.</div>
+    </section>
+    <p class="disclaimer">Disclaimer: AI output can be inaccurate. Always verify important claims with reliable, independent sources.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
